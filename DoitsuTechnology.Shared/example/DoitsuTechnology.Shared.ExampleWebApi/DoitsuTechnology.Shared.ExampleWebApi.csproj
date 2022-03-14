@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="FluentValidation.AspNetCore" Version="10.4.0" />
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\src\DoitsuTechnology.Shared.Application\DoitsuTechnology.Shared.Application.csproj" />
+      <ProjectReference Include="..\..\src\DoitsuTechnology.Shared.Domain\DoitsuTechnology.Shared.Domain.csproj" />
+      <ProjectReference Include="..\..\src\DoitsuTechnology.Shared.Infrastructure\DoitsuTechnology.Shared.Infrastructure.csproj" />
+    </ItemGroup>
+
+</Project>
